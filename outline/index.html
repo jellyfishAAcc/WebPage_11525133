@@ -1,51 +1,1790 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#242321">
-<meta name="description" content="提瓦特迴音壁，收藏原神旅途中的動人話語。依照此刻的心情，聽見一句剛好的陪伴。">
-<title>提瓦特迴音壁｜把旅途中的話，留給此刻的你</title>
-<style>
-:root{--ink:#252421;--paper:#f5f2eb;--white:#fffefa;--gold:#bd9654;--gold-light:#e7d4ad;--muted:#827e75;--line:#e5dfd3;--serif:"Noto Serif TC","Songti TC",serif;--sans:"Noto Sans TC",sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.topbar{height:74px;border-bottom:1px solid rgba(255,255,255,.13);position:absolute;z-index:5;inset:0 0 auto;color:white}.nav{height:100%;display:flex;justify-content:space-between;align-items:center}.brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-weight:700;letter-spacing:.12em}.sigil{width:31px;height:31px;border:1px solid var(--gold-light);border-radius:50%;display:grid;place-items:center;color:var(--gold-light);font-size:18px}.navlinks{display:flex;gap:32px;align-items:center;font-size:13px;color:#e8e4dc}.navlinks a:hover{color:var(--gold-light)}.hero{min-height:640px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 72% 48%,#48443b 0,#302e2a 34%,#232321 72%);color:#fff}.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(218,190,139,.16);border-radius:50%;width:520px;height:520px;right:4%;top:60px;box-shadow:0 0 0 42px rgba(218,190,139,.025),0 0 0 100px rgba(218,190,139,.02)}.hero:after{width:370px;height:370px;right:calc(4% + 75px);top:135px;border-color:rgba(218,190,139,.24);box-shadow:none}.hero-inner{position:relative;z-index:1;padding-top:80px}.kicker{font-size:11px;letter-spacing:.25em;color:var(--gold-light);font-weight:600}.hero h1{font:600 clamp(39px,6vw,68px)/1.38 var(--serif);letter-spacing:.08em;margin:17px 0 18px}.hero h1 span{color:var(--gold-light)}.hero-copy{max-width:510px;color:#c7c3bb;font-size:15px;margin:0 0 30px}.button{border:1px solid var(--gold);background:var(--gold);color:#211f1b;padding:11px 22px;letter-spacing:.06em;font-weight:600;display:inline-flex;align-items:center;gap:10px;transition:.2s}.button:hover{background:#d2b476;transform:translateY(-2px)}.button.ghost{background:transparent;color:#f4eee2;border-color:rgba(255,255,255,.42)}.button.ghost:hover{background:rgba(255,255,255,.08)}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-caption{position:absolute;right:6%;bottom:45px;color:#b6a681;font:italic 13px var(--serif);letter-spacing:.12em}.section{padding:88px 0}.section-head{text-align:center;margin-bottom:34px}.eyebrow{margin:0 0 8px;color:var(--gold);font-size:11px;letter-spacing:.2em;font-weight:700}.section h2{font:600 clamp(27px,4vw,38px)/1.45 var(--serif);letter-spacing:.08em;margin:0}.section-intro{color:var(--muted);font-size:14px;margin:9px auto 0;max-width:520px}.quote-section{background:var(--white)}.quote-card{max-width:850px;margin:auto;background:#2c2b28;color:#fff;padding:48px clamp(25px,7vw,76px);position:relative;text-align:center;box-shadow:0 18px 45px #24232118}.quote-card:before,.quote-card:after{position:absolute;color:var(--gold);font:72px var(--serif);line-height:1}.quote-card:before{content:"「";left:25px;top:22px}.quote-card:after{content:"」";right:25px;bottom:4px}.quote-mood{display:inline-block;border:1px solid #8a754f;color:#e5cf9f;padding:3px 13px;font-size:11px;letter-spacing:.12em}.quote-text{font:500 clamp(22px,3.5vw,34px)/1.8 var(--serif);letter-spacing:.06em;margin:20px auto 16px;max-width:680px}.quote-source{color:#b9b4aa;font-size:13px;letter-spacing:.08em}.quote-source b{color:#e3c78f;font-weight:500}.quote-actions{display:flex;justify-content:center;gap:10px;margin-top:26px;flex-wrap:wrap}.quote-actions button{color:#eee9df;background:transparent;border:1px solid #69645a;padding:8px 15px;font-size:13px}.quote-actions button:hover,.quote-actions button.active{border-color:var(--gold);color:#e7ca91}.filter-section{background:var(--paper)}.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 28px}.filter{border:1px solid #d9d2c5;background:transparent;color:#716c62;padding:8px 17px;border-radius:30px;font-size:13px;transition:.2s}.filter:hover,.filter.active{background:var(--ink);color:white;border-color:var(--ink)}.quote-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.quote-item{background:var(--white);border:1px solid var(--line);padding:23px;min-height:215px;display:flex;flex-direction:column;transition:.2s}.quote-item:hover{transform:translateY(-3px);box-shadow:0 12px 28px #2423210d}.quote-item .tag{color:#a27d3c;font-size:11px;letter-spacing:.12em}.quote-item blockquote{margin:10px 0 20px;font:500 17px/1.8 var(--serif)}.item-foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;color:var(--muted);font-size:12px}.item-foot button{border:0;background:none;color:#9d9587;font-size:18px;padding:3px}.item-foot button:hover,.item-foot button.saved{color:#b58743}.submit-section{background:#eae5da}.submit-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}.submit-copy p{color:#716c62;font-size:14px}.form{background:var(--white);padding:28px}.field{margin-bottom:16px}.field label{display:block;font-size:12px;color:#6e695f;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;padding:11px 12px;border:1px solid #ddd6c9;background:#fffefa;color:var(--ink);outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold)}.field textarea{min-height:112px;resize:vertical}.form .button{width:100%;justify-content:center}.note{font-size:11px;color:#958f83;margin:11px 0 0}.footer{background:#252421;color:#c7c2b8;padding:27px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:#252421;color:white;padding:11px 19px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:9}.toast.show{opacity:1;transform:translate(-50%,0)}
-@media(max-width:760px){.navlinks{gap:15px;font-size:12px}.hero{min-height:580px}.hero:before{right:-260px}.hero:after{right:-185px}.hero-caption{right:24px;bottom:25px}.section{padding:68px 0}.quote-list{grid-template-columns:repeat(2,1fr)}.submit-grid{grid-template-columns:1fr;gap:24px}}
-@media(max-width:520px){.wrap{width:calc(100% - 34px)}.topbar{height:64px}.navlinks{gap:12px}.navlinks a{font-size:11px}.navlinks a:last-child{display:none}.hero{min-height:570px}.hero h1{font-size:40px}.hero-copy{font-size:14px}.quote-card{padding:40px 26px}.quote-card:before{left:10px;top:12px;font-size:50px}.quote-card:after{right:10px;font-size:50px}.quote-list{grid-template-columns:1fr}.quote-item{min-height:180px}.form{padding:20px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="提瓦特迴音壁 —— 收集並展示原神角色在不同劇情與版本中觸動人心的名言與情境背景，適時給予造訪者一句剛好的陪伴與共鳴。">
+  <title>提瓦特迴音壁 ｜ 旅途中的字句，給此刻的你</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #1e1e20;
+      --bg-card-dark: #272624;
+      --bg-card-hover: #312f2c;
+      --bg-light: #f7f5f0;
+      --bg-paper: #ffffff;
+      --bg-accent: #ede9df;
+      --gold-primary: #c99a45;
+      --gold-light: #dfb76c;
+      --gold-soft: #f4e8cc;
+      --gold-dark: #8c6a27;
+      --text-dark: #232220;
+      --text-muted: #797368;
+      --text-light: #f9f7f2;
+      --text-light-muted: #b8b3a8;
+      --border-light: #e5dfd3;
+      --border-dark: #3f3c37;
+      --border-gold: rgba(201, 154, 69, 0.35);
+      --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --shadow-dark: 0 16px 36px rgba(0, 0, 0, 0.25);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --font-serif: 'Noto Serif TC', 'Songti TC', 'Source Han Serif TC', serif;
+      --font-sans: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+      --transition: all 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      font-family: var(--font-sans);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1140px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* =========================================
+       頁首導覽 (Header)
+       ========================================= */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(30, 30, 32, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(201, 154, 69, 0.2);
+      transition: var(--transition);
+    }
+
+    .header-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-light);
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--gold-light);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+      font-size: 19px;
+      box-shadow: 0 0 10px rgba(223, 183, 108, 0.25);
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--text-light);
+    }
+
+    .brand-sub {
+      font-size: 0.72rem;
+      color: var(--gold-light);
+      letter-spacing: 0.18em;
+      display: block;
+      margin-top: -3px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      color: var(--text-light-muted);
+      letter-spacing: 0.05em;
+      transition: var(--transition);
+      position: relative;
+      padding: 6px 2px;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--gold-soft);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .fav-btn-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(201, 154, 69, 0.15);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      padding: 7px 15px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      transition: var(--transition);
+    }
+
+    .fav-btn-badge:hover {
+      background: var(--gold-primary);
+      color: #1e1e20;
+    }
+
+    .fav-count {
+      background: var(--gold-primary);
+      color: #1e1e20;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 10px;
+      padding: 1px 7px;
+      line-height: 1.3;
+      transition: var(--transition);
+    }
+
+    .fav-btn-badge:hover .fav-count {
+      background: #1e1e20;
+      color: var(--gold-soft);
+    }
+
+    /* =========================================
+       主視覺橫幅 (Hero Section)
+       ========================================= */
+    .hero {
+      position: relative;
+      background: radial-gradient(circle at 75% 35%, #35332f 0%, #252422 45%, #191817 90%);
+      color: var(--text-light);
+      padding: 110px 0 100px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(201, 154, 69, 0.2);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: 5%;
+      width: 580px;
+      height: 580px;
+      border-radius: 50%;
+      border: 1px dashed rgba(201, 154, 69, 0.18);
+      pointer-events: none;
+      box-shadow: 0 0 80px rgba(201, 154, 69, 0.05);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 15%;
+      right: 15%;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      border: 1px solid rgba(223, 183, 108, 0.15);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold-light);
+      font-size: 0.85rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .hero-kicker::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--gold-light);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.3rem, 5.2vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+      color: #ffffff;
+    }
+
+    .hero-title .highlight {
+      color: var(--gold-light);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #ccc8be;
+      margin-bottom: 38px;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 28px;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .btn-gold {
+      background: var(--gold-primary);
+      color: #1a1918;
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(201, 154, 69, 0.35);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(201, 154, 69, 0.45);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-light);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--gold-light);
+      color: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    /* =========================================
+       區塊共用標題
+       ========================================= */
+    .section-head {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-eyebrow {
+      color: var(--gold-primary);
+      font-size: 0.8rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-dark);
+      margin-bottom: 14px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* =========================================
+       功能 1：今日箴言隨機抽取 (Daily Quote)
+       ========================================= */
+    .today-section {
+      padding: 90px 0;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .today-card {
+      background: linear-gradient(145deg, #2a2926 0%, #1f1e1c 100%);
+      color: var(--text-light);
+      border-radius: var(--radius-md);
+      padding: 56px 48px;
+      border: 1px solid rgba(201, 154, 69, 0.3);
+      box-shadow: var(--shadow-dark);
+      position: relative;
+      overflow: hidden;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .today-card::before {
+      content: '「';
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-family: var(--font-serif);
+      font-size: 6rem;
+      color: rgba(201, 154, 69, 0.15);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .today-card::after {
+      content: '」';
+      position: absolute;
+      bottom: -15px;
+      right: 30px;
+      font-family: var(--font-serif);
+      font-size: 6rem;
+      color: rgba(201, 154, 69, 0.15);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .today-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .mood-pill {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      background: rgba(201, 154, 69, 0.1);
+    }
+
+    .region-pill {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      color: var(--text-light-muted);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .today-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.8vw, 1.95rem);
+      font-weight: 600;
+      line-height: 1.8;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 2;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease;
+    }
+
+    .today-author {
+      font-size: 1.05rem;
+      color: var(--gold-soft);
+      font-family: var(--font-serif);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .today-context {
+      font-size: 0.88rem;
+      color: #b0aaa0;
+      line-height: 1.6;
+      max-width: 620px;
+      margin: 0 auto 34px;
+      padding-top: 6px;
+      border-top: 1px dashed rgba(201, 154, 69, 0.25);
+    }
+
+    .today-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 3;
+    }
+
+    .today-btn {
+      padding: 10px 20px;
+      font-size: 0.88rem;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-light);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .today-btn:hover {
+      background: rgba(201, 154, 69, 0.2);
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+    }
+
+    .today-btn.favorited {
+      background: rgba(201, 154, 69, 0.25);
+      border-color: var(--gold-primary);
+      color: var(--gold-light);
+    }
+
+    .today-btn-primary {
+      background: var(--gold-primary);
+      color: #1e1e20;
+      font-weight: 600;
+      border: 1px solid var(--gold-light);
+    }
+
+    .today-btn-primary:hover {
+      background: var(--gold-light);
+      color: #1e1e20;
+      transform: translateY(-2px);
+    }
+
+    /* =========================================
+       功能 2 & 3：情緒標籤篩選 & 語錄展示
+       ========================================= */
+    .quotes-section {
+      padding: 90px 0;
+      background: var(--bg-light);
+    }
+
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .filter-btn {
+      padding: 9px 22px;
+      border-radius: 30px;
+      font-size: 0.92rem;
+      border: 1px solid var(--border-light);
+      background: #ffffff;
+      color: var(--text-dark);
+      letter-spacing: 0.05em;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-btn:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-dark);
+    }
+
+    .filter-btn.active {
+      background: #252422;
+      color: #ffffff;
+      border-color: #252422;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .filter-btn.special-fav {
+      border-color: rgba(201, 154, 69, 0.5);
+      color: var(--gold-dark);
+      background: #faf6ed;
+    }
+
+    .filter-btn.special-fav.active {
+      background: var(--gold-primary);
+      color: #1e1e20;
+      border-color: var(--gold-primary);
+      font-weight: 600;
+    }
+
+    /* 語錄卡片格狀排列 */
+    .quotes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 24px;
+    }
+
+    .quote-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 30px 28px 24px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .quote-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(201, 154, 69, 0.4);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .card-tags {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tag-mood {
+      font-size: 0.76rem;
+      padding: 2px 10px;
+      border-radius: 12px;
+      background: #f4eee2;
+      color: var(--gold-dark);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+
+    .tag-region {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    .btn-fav-card {
+      background: transparent;
+      border: none;
+      font-size: 1.3rem;
+      color: #bbb3a4;
+      transition: var(--transition);
+      padding: 4px;
+      line-height: 1;
+    }
+
+    .btn-fav-card:hover {
+      color: #d14d59;
+      transform: scale(1.15);
+    }
+
+    .btn-fav-card.active {
+      color: #d14d59;
+    }
+
+    .card-text {
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      font-weight: 600;
+      line-height: 1.75;
+      color: var(--text-dark);
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .card-context {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 22px;
+      padding-left: 12px;
+      border-left: 2px solid var(--border-light);
+      background: #fbfaf8;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .card-footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid #f0eae1;
+    }
+
+    .card-character {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #2e2c29;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-card-action {
+      background: #faf8f5;
+      border: 1px solid #e8e2d8;
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .btn-card-action:hover {
+      background: var(--bg-card-dark);
+      color: #ffffff;
+      border-color: var(--bg-card-dark);
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--border-light);
+      color: var(--text-muted);
+    }
+
+    .empty-icon {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      color: var(--gold-light);
+    }
+
+    /* =========================================
+       功能 4：名言投稿箱 (Submission Box)
+       ========================================= */
+    .submit-section {
+      padding: 95px 0;
+      background: #ede9df;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .submit-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .submit-intro {
+      padding-top: 10px;
+    }
+
+    .submit-intro h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      line-height: 1.35;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: 0.06em;
+    }
+
+    .submit-intro p {
+      font-size: 0.96rem;
+      color: #635f56;
+      line-height: 1.85;
+      margin-bottom: 24px;
+    }
+
+    .submit-quote-tip {
+      background: #f7f4ed;
+      border-left: 3px solid var(--gold-primary);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.88rem;
+      color: #6a6458;
+    }
+
+    .submit-form-card {
+      background: #ffffff;
+      padding: 38px 36px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(201, 154, 69, 0.25);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #383633;
+      margin-bottom: 8px;
+    }
+
+    .form-group label span.req {
+      color: #c94b4b;
+      margin-left: 4px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #dcd5c9;
+      background: #fffefa;
+      border-radius: var(--radius-sm);
+      color: var(--text-dark);
+      font-size: 0.94rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 3px rgba(201, 154, 69, 0.15);
+      background: #ffffff;
+    }
+
+    .form-textarea {
+      min-height: 110px;
+      resize: vertical;
+      line-height: 1.7;
+    }
+
+    .form-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+      text-align: center;
+    }
+
+    /* =========================================
+       收藏夾抽屜 / Modal
+       ========================================= */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(18, 18, 19, 0.75);
+      backdrop-filter: blur(5px);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-drawer {
+      width: min(480px, 100%);
+      height: 100%;
+      background: #ffffff;
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+    }
+
+    .modal-overlay.open .modal-drawer {
+      transform: translateX(0);
+    }
+
+    .drawer-header {
+      padding: 24px 28px;
+      background: #252422;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(201, 154, 69, 0.3);
+    }
+
+    .drawer-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gold-soft);
+    }
+
+    .drawer-close {
+      background: transparent;
+      border: none;
+      color: #ccc8be;
+      font-size: 1.6rem;
+      line-height: 1;
+      transition: var(--transition);
+      padding: 4px;
+    }
+
+    .drawer-close:hover {
+      color: #ffffff;
+      transform: rotate(90deg);
+    }
+
+    .drawer-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .fav-item {
+      background: #fbf9f5;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      position: relative;
+    }
+
+    .fav-item-quote {
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      font-weight: 600;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: var(--text-dark);
+    }
+
+    .fav-item-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .fav-item-del {
+      background: transparent;
+      border: none;
+      color: #a39b8e;
+      cursor: pointer;
+      font-size: 0.82rem;
+      transition: var(--transition);
+      padding: 3px 6px;
+    }
+
+    .fav-item-del:hover {
+      color: #c94b4b;
+    }
+
+    .drawer-footer {
+      padding: 18px 24px;
+      background: #f7f4ed;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* =========================================
+       頁尾 (Footer)
+       ========================================= */
+    .site-footer {
+      background: #1e1e20;
+      color: #9c978d;
+      padding: 48px 0 32px;
+      border-top: 1px solid rgba(201, 154, 69, 0.2);
+      font-size: 0.88rem;
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      color: var(--gold-soft);
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .footer-copy {
+      font-size: 0.82rem;
+      color: #837e75;
+    }
+
+    /* =========================================
+       輕量彈出提示 (Toast Notification)
+       ========================================= */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translate(-50%, 40px);
+      background: #252422;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      border: 1px solid var(--border-gold);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    /* =========================================
+       響應式設計 (RWD)
+       ========================================= */
+    @media (max-width: 860px) {
+      .submit-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .nav-menu {
+        gap: 16px;
+      }
+      .nav-menu li:not(:last-child) {
+        display: none;
+      }
+      .hero {
+        padding: 80px 0 70px;
+      }
+      .today-card {
+        padding: 40px 24px;
+      }
+      .today-card::before, .today-card::after {
+        font-size: 4rem;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .quotes-grid {
+        grid-template-columns: 1fr;
+      }
+      .submit-form-card {
+        padding: 26px 20px;
+      }
+      .today-controls {
+        flex-direction: column;
+        width: 100%;
+      }
+      .today-btn, .today-btn-primary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-<header class="topbar"><nav class="nav wrap" aria-label="主要導覽"><a class="brand" href="#top"><span class="sigil">✧</span>提瓦特迴音壁</a><div class="navlinks"><a href="#today">今日箴言</a><a href="#voices">心情語錄</a><a href="#submit">留下回音</a></div></nav></header>
-<main id="top">
-<section class="hero"><div class="hero-inner wrap"><p class="kicker">A QUIET CORNER OF TEYVAT</p><h1>旅途很長，<br><span>願有一句話</span><br>陪你走過。</h1><p class="hero-copy">收集那些曾在提瓦特照亮我們的話語。無論此刻身在何處，願你總能在熟悉的聲音裡，找到一點勇氣與安定。</p><div class="actions"><a class="button" href="#today">聽見今日箴言 <span>↓</span></a><a class="button ghost" href="#voices">沿著心情尋找</a></div></div><div class="hero-caption">「願風指引你的道路。」</div></section>
-<section class="section quote-section" id="today"><div class="wrap"><div class="section-head"><p class="eyebrow">A WORD FOR TODAY</p><h2>今日箴言</h2><p class="section-intro">有些話在某個時刻響起，恰好成為繼續前行的理由。</p></div><article class="quote-card" aria-live="polite"><span class="quote-mood" id="todayMood">前行</span><p class="quote-text" id="todayQuote">「只要堅信自己的道路，就無需在意別人怎麼看。」</p><p class="quote-source"><b id="todayCharacter">琴</b>　·　<span id="todayOrigin">角色語音・閒聊</span></p><div class="quote-actions"><button id="randomBtn" type="button">↻　再聽一句</button><button id="saveToday" type="button">♡　收藏這句</button><button id="shareToday" type="button">↗　分享</button></div></article></div></section>
-<section class="section filter-section" id="voices"><div class="wrap"><div class="section-head"><p class="eyebrow">WORDS THAT STAY</p><h2>沿著此刻的心情</h2><p class="section-intro">選一種心境，找到那句此刻想聽見的話。</p></div><div class="filters" role="group" aria-label="依情緒篩選語錄"><button class="filter active" data-filter="全部">全部</button><button class="filter" data-filter="迷惘">迷惘</button><button class="filter" data-filter="溫暖">溫暖</button><button class="filter" data-filter="前行">前行</button><button class="filter" data-filter="釋懷">釋懷</button></div><div class="quote-list" id="quoteList"></div></div></section>
-<section class="section submit-section" id="submit"><div class="wrap submit-grid"><div class="submit-copy"><p class="eyebrow">LEAVE YOUR ECHO</p><h2>把你的那一句，<br>也留在這裡。</h2><p>每個人都有一段被某句話接住的時刻。寫下你最珍惜的角色台詞與出處，讓這份回音繼續傳遞。</p></div><form class="form" id="quoteForm"><div class="field"><label for="line">最打動你的台詞</label><textarea id="line" required maxlength="160" placeholder="寫下那句一直留在心裡的話……"></textarea></div><div class="field"><label for="character">角色名稱</label><input id="character" required maxlength="30" placeholder="例如：派蒙"></div><div class="field"><label for="origin">台詞出處</label><input id="origin" maxlength="50" placeholder="例如：邀約事件・第一幕"></div><div class="field"><label for="mood">最貼近的心情</label><select id="mood"><option>溫暖</option><option>迷惘</option><option>前行</option><option>釋懷</option></select></div><button class="button" type="submit">送出這段回音　→</button><p class="note">投稿會暫存在這個頁面中，重新整理後將清除。</p></form></div></section>
-</main><footer class="footer"><div class="footer-inner wrap"><span>提瓦特迴音壁　·　願每段旅途都有回聲</span><span>本頁為粉絲創作，角色與作品相關權利歸原權利人所有。</span></div></footer><div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script>
-const quotes=[
- {text:'只要堅信自己的道路，就無需在意別人怎麼看。',character:'琴',origin:'角色語音・閒聊',mood:'前行'},
- {text:'風帶來故事的種子，時間使之發芽。',character:'溫迪',origin:'角色語音・閒聊',mood:'溫暖'},
- {text:'即使是微小的光，也能照亮黑暗。',character:'芭芭拉',origin:'角色語音・閒聊',mood:'溫暖'},
- {text:'迷路的時候，就抬頭看看星星吧。',character:'莫娜',origin:'角色語音・下雨的時候',mood:'迷惘'},
- {text:'過去的事就讓它過去吧，重要的是現在。',character:'鍾離',origin:'角色語音・閒聊',mood:'釋懷'},
- {text:'只要還在前進，總會抵達想去的地方。',character:'諾艾爾',origin:'角色語音・閒聊',mood:'前行'},
- {text:'相遇與離別，都是旅途的一部分。',character:'楓原萬葉',origin:'角色語音・閒聊',mood:'釋懷'},
- {text:'無論身處何方，只要心意相通，便不算孤單。',character:'派蒙',origin:'旅途中的對話',mood:'溫暖'},
- {text:'就算看不清前路，也可以先走好眼前的一步。',character:'刻晴',origin:'角色語音・閒聊',mood:'迷惘'},
- {text:'願你今晚，能做一個好夢。',character:'七七',origin:'角色語音・晚安',mood:'溫暖'},
- {text:'別害怕改變，新的風景總在前方。',character:'珊瑚宮心海',origin:'角色語音・閒聊',mood:'前行'},
- {text:'告別不是結束，而是把珍惜帶往下一段旅程。',character:'納西妲',origin:'角色語音・閒聊',mood:'釋懷'}
-];
-let current=0;const $=s=>document.querySelector(s);const toast=t=>{const el=$('#toast');el.textContent=t;el.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.classList.remove('show'),2300)};
-function showToday(i){current=(i+quotes.length)%quotes.length;const q=quotes[current];$('#todayQuote').textContent='「'+q.text+'」';$('#todayCharacter').textContent=q.character;$('#todayOrigin').textContent=q.origin;$('#todayMood').textContent=q.mood;updateSaveButton()}
-const saved=new Set();function updateSaveButton(){const b=$('#saveToday'),q=quotes[current],yes=saved.has(q.text);b.classList.toggle('active',yes);b.textContent=yes?'♥　已收藏':'♡　收藏這句'}
-$('#randomBtn').addEventListener('click',()=>{let i;do{i=Math.floor(Math.random()*quotes.length)}while(i===current);showToday(i)});
-$('#saveToday').addEventListener('click',()=>{const q=quotes[current];saved.has(q.text)?saved.delete(q.text):saved.add(q.text);updateSaveButton();toast(saved.has(q.text)?'已收藏這句話':'已從收藏中移除')});
-async function shareQuote(q){const text='「'+q.text+'」——'+q.character+'｜提瓦特迴音壁';try{if(navigator.share)await navigator.share({title:'提瓦特迴音壁',text});else{await navigator.clipboard.writeText(text);toast('語錄已複製，可以分享給朋友了')}}catch(e){if(e.name!=='AbortError')toast('分享功能暫時無法使用')}}$('#shareToday').addEventListener('click',()=>shareQuote(quotes[current]));
-function render(filter='全部'){const list=$('#quoteList');list.innerHTML='';quotes.filter(q=>filter==='全部'||q.mood===filter).forEach(q=>{const article=document.createElement('article');article.className='quote-item';const tag=document.createElement('span');tag.className='tag';tag.textContent=q.mood+'　/　ECHO';const quote=document.createElement('blockquote');quote.textContent='「'+q.text+'」';const foot=document.createElement('div');foot.className='item-foot';const source=document.createElement('span');source.textContent=q.character+' · '+q.origin;const save=document.createElement('button');save.type='button';save.setAttribute('aria-label','收藏這句語錄');save.classList.toggle('saved',saved.has(q.text));save.textContent=saved.has(q.text)?'♥':'♡';save.addEventListener('click',()=>{saved.has(q.text)?saved.delete(q.text):saved.add(q.text);save.classList.toggle('saved',saved.has(q.text));save.textContent=saved.has(q.text)?'♥':'♡';toast(saved.has(q.text)?'已收藏這句話':'已從收藏中移除')});foot.append(source,save);article.append(tag,quote,foot);list.append(article)})}
-document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelector('.filter.active').classList.remove('active');b.classList.add('active');render(b.dataset.filter)}));
-$('#quoteForm').addEventListener('submit',e=>{e.preventDefault();const q={text:$('#line').value.trim(),character:$('#character').value.trim(),origin:$('#origin').value.trim()||'旅人投稿',mood:$('#mood').value};if(!q.text||!q.character)return;quotes.unshift(q);render(document.querySelector('.filter.active').dataset.filter);e.currentTarget.reset();toast('謝謝你，這段回音已留在頁面裡')});
-showToday(Math.floor(Math.random()*quotes.length));render();
-</script>
+
+  <!-- 頂部導覽列 -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="#top" class="brand" aria-label="返回首頁">
+        <div class="brand-mark">✧</div>
+        <div>
+          <span class="brand-title">提瓦特迴音壁</span>
+          <span class="brand-sub">ECHOES OF TEYVAT</span>
+        </div>
+      </a>
+
+      <nav aria-label="網站選單">
+        <ul class="nav-menu">
+          <li><a href="#today" class="nav-link">今日箴言</a></li>
+          <li><a href="#quotes" class="nav-link">心境語錄</a></li>
+          <li><a href="#submit" class="nav-link">留下回音</a></li>
+          <li>
+            <button class="fav-btn-badge" id="openFavModal" aria-label="開啟收藏夾">
+              <span>♥ 我的收藏</span>
+              <span class="fav-count" id="favCountBadge">0</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 主視覺介紹區 -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-kicker">旅途中的陪伴與共鳴</div>
+        <h1 class="hero-title">
+          旅途很長，<br>
+          願有<span class="highlight">一句話</span><br>
+          接住此刻的你。
+        </h1>
+        <p class="hero-desc">
+          收集提瓦特大陸在風、岩、雷、草、水、火的歷程中觸動人心的名言與情境背景。在迷惘、疲憊或需要前行的時刻，給予你剛好的安定與勇氣。
+        </p>
+        <div class="hero-actions">
+          <a href="#today" class="btn btn-gold">聽見今日箴言 ↓</a>
+          <a href="#quotes" class="btn btn-outline">依心情探索語錄</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 功能 1：今日箴言隨機抽取 -->
+    <section class="today-section" id="today">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">A Word for Today</span>
+          <h2 class="section-title">今日箴言</h2>
+          <p class="section-desc">每次造訪或輕觸按鈕，為你翻開一句原神角色的深層低語與情境記憶。</p>
+        </div>
+
+        <article class="today-card" aria-live="polite">
+          <div class="today-meta">
+            <span class="mood-pill" id="todayMood">溫暖</span>
+            <span class="region-pill" id="todayRegion">蒙德</span>
+          </div>
+
+          <div class="today-quote" id="todayQuote">
+            「風帶來故事的種子，時間使之發芽。」
+          </div>
+
+          <div class="today-author" id="todayAuthor">—— 溫迪</div>
+          <div class="today-context" id="todayContext">在蒙德大教堂前的神像腳下，對初入提瓦特的旅行者最溫柔的祝福。</div>
+
+          <div class="today-controls">
+            <button class="today-btn today-btn-primary" id="btnNextRandom" type="button">
+              <span>↻ 再聽一句</span>
+            </button>
+            <button class="today-btn" id="btnTodayFav" type="button">
+              <span id="todayFavIcon">♡</span> <span id="todayFavText">收藏這句</span>
+            </button>
+            <button class="today-btn" id="btnTodayShare" type="button">
+              <span>↗ 分享這段話</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 功能 2 & 3：情緒標籤篩選與語錄列表 -->
+    <section class="quotes-section" id="quotes">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Echoes By Heart</span>
+          <h2 class="section-title">沿著心境尋找共鳴</h2>
+          <p class="section-desc">依照此刻的情緒標籤篩選台詞，點擊愛心可將喜歡的話語暫存至本頁收藏夾。</p>
+        </div>
+
+        <!-- 篩選器 -->
+        <div class="filter-bar" role="group" aria-label="情緒標籤篩選">
+          <button class="filter-btn active" data-filter="全部">全部語錄</button>
+          <button class="filter-btn" data-filter="迷惘">迷惘</button>
+          <button class="filter-btn" data-filter="溫暖">溫暖</button>
+          <button class="filter-btn" data-filter="前行">前行</button>
+          <button class="filter-btn" data-filter="釋懷">釋懷</button>
+          <button class="filter-btn special-fav" data-filter="收藏">♥ 僅看已收藏 (<span id="favFilterCount">0</span>)</button>
+        </div>
+
+        <!-- 卡片網格 -->
+        <div class="quotes-grid" id="quotesGrid">
+          <!-- 語錄卡片將由 JS 動態生成 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 功能 4：名言投稿箱 -->
+    <section class="submit-section" id="submit">
+      <div class="container submit-layout">
+        <div class="submit-intro">
+          <span class="section-eyebrow">Leave Your Echo</span>
+          <h2>把那句觸動你的話，<br>也留在這裡。</h2>
+          <p>
+            旅途中總有一幕劇情、一首旋律或一句對白，曾深深打動過你。提供你最珍惜的角色名言與故事背景，讓這份溫柔與感動在迴音壁中繼續傳遞。
+          </p>
+          <div class="submit-quote-tip">
+            ✧ <strong>溫馨提醒：</strong> 填寫投稿後，名言將即時加入本頁面的語錄集與篩選分類中，立刻就能瀏覽與收藏！
+          </div>
+        </div>
+
+        <div class="submit-form-card">
+          <form id="submissionForm">
+            <div class="form-group">
+              <label for="quoteInput">角色名言台詞 <span class="req">*</span></label>
+              <textarea class="form-textarea" id="quoteInput" required maxlength="200" placeholder="例如：欲買桂花同載酒…只可惜故人，何日再見呢。"></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="characterInput">角色名稱 <span class="req">*</span></label>
+                <input class="form-input" id="characterInput" type="text" required maxlength="30" placeholder="例如：鐘離">
+              </div>
+
+              <div class="form-group">
+                <label for="regionInput">所屬地區</label>
+                <select class="form-select" id="regionInput">
+                  <option value="蒙德">蒙德</option>
+                  <option value="璃月" selected>璃月</option>
+                  <option value="稻妻">稻妻</option>
+                  <option value="須彌">須彌</option>
+                  <option value="楓丹">楓丹</option>
+                  <option value="納塔">納塔</option>
+                  <option value="至冬">至冬</option>
+                  <option value="旅者">旅行者/其他</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="moodSelect">心境分類 <span class="req">*</span></label>
+                <select class="form-select" id="moodSelect" required>
+                  <option value="迷惘">迷惘</option>
+                  <option value="溫暖">溫暖</option>
+                  <option value="前行">前行</option>
+                  <option value="釋懷" selected>釋懷</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="originInput">劇情/出處說明</label>
+                <input class="form-input" id="originInput" type="text" maxlength="60" placeholder="例如：角色語音・閒聊">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contextInput">情境背景說明（可選）</label>
+              <input class="form-input" id="contextInput" type="text" maxlength="120" placeholder="例如：站在璃月港高處俯瞰繁華時，對漫長歲月與故友的溫柔慨嘆。">
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%;">
+              <span>送出這段回音 ✧</span>
+            </button>
+            <p class="form-note">投稿內容將暫存於您的瀏覽器中，隨時可於本頁查看與篩選。</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 收藏夾側邊抽屜 (Drawer Modal) -->
+  <div class="modal-overlay" id="favModal" aria-hidden="true">
+    <div class="modal-drawer">
+      <div class="drawer-header">
+        <div class="drawer-title">
+          <span>♥ 我的語錄收藏夾</span>
+        </div>
+        <button class="drawer-close" id="closeFavModal" aria-label="關閉收藏夾">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="favListContent">
+        <!-- 動態渲染收藏列表 -->
+      </div>
+
+      <div class="drawer-footer">
+        <span style="font-size: 0.85rem; color: var(--text-muted);">共收藏 <strong id="modalFavCount" style="color: var(--gold-primary);">0</strong> 句</span>
+        <button class="btn-card-action" id="btnClearFavs" type="button">清空收藏</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <div class="footer-brand">提瓦特迴音壁</div>
+        <p class="footer-copy">願風神眷顧每一位啟程的旅人，願星空記錄每一個不曾遺忘的聲音。</p>
+      </div>
+      <div class="footer-copy">
+        本站為原神愛好者之非官方網頁創作 ｜ 角色與原案版權歸原權利人所有
+      </div>
+    </div>
+  </footer>
+
+  <!-- 輕量彈跳通知 -->
+  <div class="toast" id="toastBox" role="status" aria-live="polite">
+    <span id="toastIcon">✧</span>
+    <span id="toastMsg">通知訊息</span>
+  </div>
+
+  <script>
+    // ==========================================
+    // 預設經典名言資料庫 (涵蓋不同情緒與情境說明)
+    // ==========================================
+    const DEFAULT_QUOTES = [
+      {
+        id: 'q1',
+        text: '欲買桂花同載酒…只可惜故人，何日再見呢。',
+        character: '鐘離',
+        region: '璃月',
+        mood: '釋懷',
+        origin: '角色語音・閒聊',
+        context: '站在璃月港高處俯瞰繁華人間時，對漫長三千七百年歲月與故友長眠的溫柔慨嘆。'
+      },
+      {
+        id: 'q2',
+        text: '風帶來故事的種子，時間使之發芽。',
+        character: '溫迪',
+        region: '蒙德',
+        mood: '溫暖',
+        origin: '蒙德序章・旅途起點',
+        context: '在蒙德大教堂前的神像腳下，對初入提瓦特大陸的旅行者最溫柔真摯的祝福。'
+      },
+      {
+        id: 'q3',
+        text: '告別不是結束，而是把珍惜帶往下一段旅程。',
+        character: '納西妲',
+        region: '須彌',
+        mood: '釋懷',
+        origin: '魔神任務・淨善宮叮嚀',
+        context: '當旅人即將踏向下一站楓丹，智慧之神用無比平靜而寬容的心靈賦予前行的力量。'
+      },
+      {
+        id: 'q4',
+        text: '即使是獨自一人在漫長的黑夜裡，我也必須把這場戲演到最後。',
+        character: '芙寧娜',
+        region: '楓丹',
+        mood: '前行',
+        origin: '魔神任務第四章第五幕',
+        context: '以凡人之軀默默背負整個楓丹的預言長達五百年，在孤獨深淵中以意志堅守諾言。'
+      },
+      {
+        id: 'q5',
+        text: '當你迷失在命運的霧靄中時，就抬頭看看星空吧，答案早已寫在那裡。',
+        character: '莫娜',
+        region: '蒙德',
+        mood: '迷惘',
+        origin: '占星術士的指引',
+        context: '面對困頓與未知的未來，占星術士安撫身陷焦慮中的心靈，提醒命運始終有光指引。'
+      },
+      {
+        id: 'q6',
+        text: '只要堅信自己的道路，就無需在意別人怎麼看。',
+        character: '琴',
+        region: '蒙德',
+        mood: '前行',
+        origin: '角色語音・信條',
+        context: '身兼騎士團代理團長重責大任，無論壓力多麼繁重，依然守護初心的堅定話語。'
+      },
+      {
+        id: 'q7',
+        text: '飄搖風雨中，帶刀歸來赤子心。相遇與離別，皆如清風拂過。',
+        character: '楓原萬葉',
+        region: '稻妻',
+        mood: '釋懷',
+        origin: '角色故事・行舟聽風',
+        context: '走遍七國山水、經歷至親友人的長眠與風浪，心中依舊澄明如鏡的浪人哲學。'
+      },
+      {
+        id: 'q8',
+        text: '如遇失道曠野之難，路遭賊人之難…呼我名，三眼五顯仙人，魈，聽召前來。',
+        character: '魈',
+        region: '璃月',
+        mood: '溫暖',
+        origin: '魔神任務第一章・望舒客棧',
+        context: '忍受數千年業障反噬的降魔大聖，將最深重且即刻響應的守護誓言留給了旅伴。'
+      },
+      {
+        id: 'q9',
+        text: '不管昨夜下了多大的暴雨，今天陽光照常會刺破烏雲。',
+        character: '娜維婭',
+        region: '楓丹',
+        mood: '前行',
+        origin: '刺玫會會長的話語',
+        context: '在洗清父親冤屈與經歷水淹楓丹的劫難後，仍帶上最明亮的微笑擁抱未來的朝陽。'
+      },
+      {
+        id: 'q10',
+        text: '雨林裡的落葉雖然會腐爛，但它正成為新苗茁壯的養分。停滯並不可怕，那只是積蓄力量的過程。',
+        character: '提納里',
+        region: '須彌',
+        mood: '迷惘',
+        origin: '道成林巡林筆記',
+        context: '巡林官給予迷失方向的求學者的生態哲思，讓焦躁的內心重新歸於自然與沉靜。'
+      },
+      {
+        id: 'q11',
+        text: '別擔心，旅行者！不管遇到多麼可怕的事情，派蒙都會一直在你身邊的！',
+        character: '派蒙',
+        region: '旅者',
+        mood: '溫暖',
+        origin: '日常對話・最忠誠的嚮導',
+        context: '無論旅途經歷多少險阻或失落，最好的夥伴總會在身旁發出最真摯溫暖的聲音。'
+      },
+      {
+        id: 'q12',
+        text: '昨天的努力造就了今天，今天的堅定決定了明天。看不清遠方時，先走好腳下這一步。',
+        character: '刻晴',
+        region: '璃月',
+        mood: '前行',
+        origin: '玉衡星工作則條',
+        context: '以人類自己的力量推動璃月港變革時，刻晴以腳踏實地的行動力掃除一切遲疑。'
+      }
+    ];
+
+    // ==========================================
+    // 狀態管理 (State)
+    // ==========================================
+    const STORAGE_KEY_QUOTES = 'teyvat_custom_quotes_v1';
+    const STORAGE_KEY_FAVS = 'teyvat_fav_ids_v1';
+
+    // 載入自定義投稿與收藏
+    let customQuotes = [];
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY_QUOTES);
+      if (stored) customQuotes = JSON.parse(stored);
+    } catch (e) {
+      console.warn('LocalStorage error:', e);
+    }
+
+    let allQuotes = [...customQuotes, ...DEFAULT_QUOTES];
+
+    let favoriteIds = new Set();
+    try {
+      const storedFavs = localStorage.getItem(STORAGE_KEY_FAVS);
+      if (storedFavs) favoriteIds = new Set(JSON.parse(storedFavs));
+    } catch (e) {
+      console.warn('LocalStorage error:', e);
+    }
+
+    let currentTodayIndex = 0;
+    let currentFilter = '全部';
+
+    // DOM 元素快取
+    const $ = selector => document.querySelector(selector);
+    const $$ = selector => document.querySelectorAll(selector);
+
+    // ==========================================
+    // 輕量通知訊息 (Toast)
+    // ==========================================
+    let toastTimer = null;
+    function showToast(message, icon = '✧') {
+      const toast = $('#toastBox');
+      $('#toastIcon').textContent = icon;
+      $('#toastMsg').textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    // ==========================================
+    // 收藏管理邏輯
+    // ==========================================
+    function saveFavoritesToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY_FAVS, JSON.stringify([...favoriteIds]));
+      } catch (e) {}
+      updateFavBadges();
+    }
+
+    function toggleFavorite(id) {
+      if (favoriteIds.has(id)) {
+        favoriteIds.delete(id);
+        showToast('已從收藏夾移除', '♡');
+      } else {
+        favoriteIds.add(id);
+        showToast('已加入我的收藏夾', '♥');
+      }
+      saveFavoritesToStorage();
+      renderTodaySection();
+      renderQuotesGrid();
+      renderFavDrawer();
+    }
+
+    function updateFavBadges() {
+      const count = favoriteIds.size;
+      $('#favCountBadge').textContent = count;
+      $('#favFilterCount').textContent = count;
+      $('#modalFavCount').textContent = count;
+    }
+
+    // ==========================================
+    // 功能 1：今日箴言隨機抽取
+    // ==========================================
+    function pickRandomToday() {
+      if (allQuotes.length <= 1) {
+        currentTodayIndex = 0;
+      } else {
+        let nextIndex;
+        do {
+          nextIndex = Math.floor(Math.random() * allQuotes.length);
+        } while (nextIndex === currentTodayIndex);
+        currentTodayIndex = nextIndex;
+      }
+      renderTodaySection();
+    }
+
+    function renderTodaySection() {
+      const q = allQuotes[currentTodayIndex] || DEFAULT_QUOTES[0];
+      const quoteEl = $('#todayQuote');
+
+      // 平滑淡出淡入動畫
+      quoteEl.style.opacity = '0';
+      setTimeout(() => {
+        $('#todayMood').textContent = q.mood;
+        $('#todayRegion').textContent = q.region || '提瓦特';
+        quoteEl.textContent = `「${q.text}」`;
+        $('#todayAuthor').textContent = `—— ${q.character}`;
+        $('#todayContext').textContent = q.context || q.origin || '無境之言，心有所感';
+
+        // 收藏按鈕狀態
+        const isFav = favoriteIds.has(q.id);
+        const favBtn = $('#btnTodayFav');
+        favBtn.classList.toggle('favorited', isFav);
+        $('#todayFavIcon').textContent = isFav ? '♥' : '♡';
+        $('#todayFavText').textContent = isFav ? '已在收藏夾' : '收藏這句';
+
+        quoteEl.style.opacity = '1';
+      }, 150);
+    }
+
+    // 今日箴言分享
+    async function shareTodayQuote() {
+      const q = allQuotes[currentTodayIndex] || DEFAULT_QUOTES[0];
+      const shareText = `「${q.text}」——《原神》${q.character}（${q.origin || q.region}）\n【提瓦特迴音壁】給此刻你的陪伴。`;
+      
+      try {
+        if (navigator.share) {
+          await navigator.share({
+            title: '提瓦特迴音壁 - 經典名言',
+            text: shareText
+          });
+        } else {
+          await navigator.clipboard.writeText(shareText);
+          showToast('語錄已複製到剪貼簿，可直接分享給朋友！', '↗');
+        }
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          // Fallback clipboard
+          try {
+            await navigator.clipboard.writeText(shareText);
+            showToast('已複製到剪貼簿', '✔');
+          } catch (e) {
+            showToast('複製功能受瀏覽器限制', '⚠');
+          }
+        }
+      }
+    }
+
+    // ==========================================
+    // 功能 2 & 3：情緒標籤篩選與卡片網格渲染
+    // ==========================================
+    function renderQuotesGrid() {
+      const grid = $('#quotesGrid');
+      grid.innerHTML = '';
+
+      let filtered = allQuotes;
+      if (currentFilter === '收藏') {
+        filtered = allQuotes.filter(q => favoriteIds.has(q.id));
+      } else if (currentFilter !== '全部') {
+        filtered = allQuotes.filter(q => q.mood === currentFilter);
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">${currentFilter === '收藏' ? '♡' : '✧'}</div>
+            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 6px;">目前尚無符合的語錄</p>
+            <p style="font-size: 0.88rem;">${currentFilter === '收藏' ? '在喜歡的話語旁點擊愛心，就能把這份感動收錄在這裡。' : '可以在下方投稿箱補上這份心境的經典台詞！'}</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(q => {
+        const isFav = favoriteIds.has(q.id);
+        const card = document.createElement('article');
+        card.className = 'quote-card';
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="card-tags">
+              <span class="tag-mood">${q.mood}</span>
+              <span class="tag-region">${q.region || '提瓦特'}</span>
+            </div>
+            <button class="btn-fav-card ${isFav ? 'active' : ''}" data-id="${q.id}" aria-label="收藏台詞">
+              ${isFav ? '♥' : '♡'}
+            </button>
+          </div>
+          <div class="card-text">「${q.text}」</div>
+          <div class="card-context">${q.context || q.origin || '旅途低語'}</div>
+          <div class="card-footer">
+            <div class="card-character">${q.character}</div>
+            <div class="card-actions">
+              <button class="btn-card-action btn-copy" data-text="「${q.text}」—— ${q.character}">複製 📋</button>
+            </div>
+          </div>
+        `;
+
+        // 綁定卡片內愛心按鈕
+        const favBtn = card.querySelector('.btn-fav-card');
+        favBtn.addEventListener('click', () => toggleFavorite(q.id));
+
+        // 綁定複製按鈕
+        const copyBtn = card.querySelector('.btn-copy');
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(copyBtn.dataset.text);
+            showToast('已複製該句語錄', '✔');
+          } catch (e) {
+            showToast('無法存取剪貼簿', '⚠');
+          }
+        });
+
+        grid.appendChild(card);
+      });
+    }
+
+    // ==========================================
+    // 收藏夾抽屜 Modal 渲染
+    // ==========================================
+    function renderFavDrawer() {
+      const container = $('#favListContent');
+      container.innerHTML = '';
+
+      const favQuotes = allQuotes.filter(q => favoriteIds.has(q.id));
+
+      if (favQuotes.length === 0) {
+        container.innerHTML = `
+          <div style="text-align: center; color: var(--text-muted); padding: 50px 20px;">
+            <div style="font-size: 2.2rem; margin-bottom: 12px; color: var(--gold-light);">♡</div>
+            <p style="font-weight: 600; margin-bottom: 6px;">收藏夾空空如也</p>
+            <p style="font-size: 0.85rem;">在語錄卡片點擊愛心，可將喜歡的話語隨時重溫。</p>
+          </div>
+        `;
+        return;
+      }
+
+      favQuotes.forEach(q => {
+        const item = document.createElement('div');
+        item.className = 'fav-item';
+        item.innerHTML = `
+          <div class="fav-item-quote">「${q.text}」</div>
+          <div class="fav-item-meta">
+            <span><strong>${q.character}</strong> · ${q.mood}</span>
+            <button class="fav-item-del" data-id="${q.id}">移除 ✕</button>
+          </div>
+        `;
+
+        item.querySelector('.fav-item-del').addEventListener('click', () => {
+          toggleFavorite(q.id);
+        });
+
+        container.appendChild(item);
+      });
+    }
+
+    function openFavModal() {
+      renderFavDrawer();
+      const modal = $('#favModal');
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeFavModal() {
+      const modal = $('#favModal');
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    // ==========================================
+    // 功能 4：名言投稿箱 (Submission)
+    // ==========================================
+    function handleSubmission(e) {
+      e.preventDefault();
+
+      const text = $('#quoteInput').value.trim();
+      const character = $('#characterInput').value.trim();
+      const region = $('#regionInput').value;
+      const mood = $('#moodSelect').value;
+      const origin = $('#originInput').value.trim() || '旅人投稿';
+      const context = $('#contextInput').value.trim() || '由造訪迴音壁的旅人留下的一抹心靈微光。';
+
+      if (!text || !character) {
+        showToast('請務必填寫台詞與角色名稱！', '⚠');
+        return;
+      }
+
+      const newQuote = {
+        id: 'c_' + Date.now(),
+        text,
+        character,
+        region,
+        mood,
+        origin,
+        context
+      };
+
+      // 放入隊列最前
+      customQuotes.unshift(newQuote);
+      allQuotes.unshift(newQuote);
+
+      try {
+        localStorage.setItem(STORAGE_KEY_QUOTES, JSON.stringify(customQuotes));
+      } catch (err) {}
+
+      // 重置表單並刷新介面
+      $('#submissionForm').reset();
+      showToast('感謝你的分享，這段回音已即刻留在頁面中 ✧', '♥');
+
+      // 切換並滾動至語錄區查看
+      currentFilter = mood;
+      $$('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === mood);
+      });
+      renderQuotesGrid();
+
+      const target = $('#quotes');
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // ==========================================
+    // 事件監聽綁定 (Event Listeners)
+    // ==========================================
+    document.addEventListener('DOMContentLoaded', () => {
+      // 隨機抽取今日箴言
+      pickRandomToday();
+      updateFavBadges();
+      renderQuotesGrid();
+
+      // 今日箴言按鈕
+      $('#btnNextRandom').addEventListener('click', pickRandomToday);
+      $('#btnTodayFav').addEventListener('click', () => {
+        const q = allQuotes[currentTodayIndex] || DEFAULT_QUOTES[0];
+        toggleFavorite(q.id);
+      });
+      $('#btnTodayShare').addEventListener('click', shareTodayQuote);
+
+      // 情緒標籤篩選按鈕
+      $$('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          $$('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.dataset.filter;
+          renderQuotesGrid();
+        });
+      });
+
+      // 投稿表單送出
+      $('#submissionForm').addEventListener('submit', handleSubmission);
+
+      // 收藏夾 Modal 開關
+      $('#openFavModal').addEventListener('click', openFavModal);
+      $('#closeFavModal').addEventListener('click', closeFavModal);
+      $('#favModal').addEventListener('click', (e) => {
+        if (e.target === $('#favModal')) closeFavModal();
+      });
+
+      // 清空收藏夾
+      $('#btnClearFavs').addEventListener('click', () => {
+        if (favoriteIds.size === 0) return;
+        favoriteIds.clear();
+        saveFavoritesToStorage();
+        renderFavDrawer();
+        renderTodaySection();
+        renderQuotesGrid();
+        showToast('已清空所有收藏', '✔');
+      });
+
+      // ESC 鍵關閉 Modal
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeFavModal();
+      });
+    });
+  </script>
 </body>
 </html>
